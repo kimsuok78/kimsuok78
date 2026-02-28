@@ -1,0 +1,182 @@
+:root{
+  --bg:#b2c7da;
+  --panel:#ffffff;
+  --text:#111;
+  --muted:#6b7280;
+  --my:#ffeb3b;      /* 카톡 느낌 노랑 */
+  --their:#ffffff;
+  --line:#e5e7eb;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background: #0b1220;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  padding:16px;
+  color:var(--text);
+}
+.app{
+  width:min(420px, 100%);
+  height:min(820px, 100vh);
+  background: var(--bg);
+  border-radius: 20px;
+  overflow:hidden;
+  box-shadow: 0 20px 80px rgba(0,0,0,.45);
+  display:flex;
+  flex-direction:column;
+  border:1px solid rgba(255,255,255,.08);
+}
+.topbar{
+  height:56px;
+  background: rgba(255,255,255,.65);
+  backdrop-filter: blur(10px);
+  display:flex;
+  align-items:center;
+  padding:0 14px;
+  gap:10px;
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+.avatar{
+  width:34px;height:34px;border-radius:12px;
+  background: #111827;
+  display:grid;place-items:center;
+  color:#fff;font-weight:700;
+  user-select:none;
+}
+.title{
+  display:flex;flex-direction:column;line-height:1.1;
+  min-width:0;
+}
+.title strong{
+  font-size:14px;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.title span{
+  font-size:12px;color:var(--muted);
+}
+.actions{margin-left:auto; display:flex; gap:8px;}
+.btn{
+  border:0;
+  background: rgba(17,24,39,.08);
+  padding:8px 10px;
+  border-radius: 12px;
+  cursor:pointer;
+  font-size:12px;
+}
+.btn:hover{background: rgba(17,24,39,.12);}
+.chat{
+  flex:1;
+  overflow:auto;
+  padding: 14px 12px 10px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.day{
+  align-self:center;
+  font-size:11px;
+  color: rgba(17,24,39,.65);
+  background: rgba(255,255,255,.55);
+  padding:6px 10px;
+  border-radius: 999px;
+  border:1px solid rgba(0,0,0,.04);
+}
+.row{
+  display:flex;
+  gap:8px;
+  align-items:flex-end;
+  max-width: 92%;
+}
+.row.me{align-self:flex-end; justify-content:flex-end;}
+.row.their{align-self:flex-start;}
+.bubble{
+  padding:10px 12px;
+  border-radius: 14px;
+  line-height:1.35;
+  font-size:14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  white-space:pre-wrap;
+  word-break:break-word;
+  border:1px solid rgba(0,0,0,.05);
+}
+.me .bubble{
+  background: var(--my);
+  border-top-right-radius: 6px;
+}
+.their .bubble{
+  background: var(--their);
+  border-top-left-radius: 6px;
+}
+.meta{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:2px;
+  font-size:10px;
+  color: rgba(17,24,39,.7);
+  min-width: 42px;
+}
+.their .meta{align-items:flex-start;}
+.read{
+  font-weight:700;
+  color: #2563eb;
+  user-select:none;
+}
+.composer{
+  background: rgba(255,255,255,.75);
+  backdrop-filter: blur(10px);
+  border-top:1px solid rgba(0,0,0,.06);
+  padding:10px;
+  display:flex;
+  gap:10px;
+  align-items:flex-end;
+}
+textarea{
+  flex:1;
+  resize:none;
+  border:1px solid rgba(0,0,0,.12);
+  border-radius: 16px;
+  padding:10px 12px;
+  outline:none;
+  font-size:14px;
+  line-height:1.35;
+  max-height: 120px;
+  background:#fff;
+}
+.send{
+  background:#111827;
+  color:#fff;
+  border:0;
+  padding:10px 14px;
+  border-radius: 16px;
+  cursor:pointer;
+  font-weight:700;
+}
+.send:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}
+.hint{
+  font-size:11px;
+  color: rgba(17,24,39,.6);
+  padding:0 10px 10px;
+}
+.toast{
+  position:absolute;
+  bottom:20px; left:50%;
+  transform:translateX(-50%);
+  background: rgba(17,24,39,.92);
+  color:#fff;
+  padding:10px 12px;
+  border-radius: 999px;
+  font-size:12px;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .18s ease;
+}
+.toast.show{opacity:1;}
+.wrap{position:relative;}
