@@ -1,14 +1,349 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SU FILM — Creative Film Studio</title>
+  <meta name="description" content="SU FILM | 광고, 애니메이션, 숏폼 드라마, 단편 영화까지 제작하는 크리에이티브 필름 스튜디오" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="SU FILM Home">
+          <span class="brand-badge">S</span>
+          <span>
+            SU FILM
+            <small>CREATIVE FILM STUDIO</small>
+          </span>
+        </a>
+
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#services">제작 분야</a></li>
+            <li><a href="#process">프로세스</a></li>
+            <li><a href="#contact">문의</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn btn-outline" href="#services">Showreel</a>
+          <a class="btn btn-gold" href="#contact">Project Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <div class="pill kicker">
+              <span class="dot"></span>
+              <span>Every frame tells a story.</span>
+            </div>
+
+            <h1 class="title">
+              Stories begin here.<br />
+              <span class="gold">SU FILM</span> is your cinematic partner.
+            </h1>
+
+            <p class="subtitle">
+              SU FILM은 광고, 애니메이션, 숏폼 드라마, 단편 영화까지 다양한 영상 콘텐츠를 제작하는 크리에이티브 필름 스튜디오입니다.
+              아이디어를 이야기로, 이야기를 감정으로, 감정을 한 편의 영화로 만듭니다.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#contact">지금 프로젝트 상담</a>
+              <a class="btn" href="#process">제작 방식 보기</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <b>Commercial Film</b>
+                <span>브랜드 메시지를 영화처럼</span>
+              </div>
+              <div class="stat">
+                <b>AI + Storytelling</b>
+                <span>기술로 더 빠르게, 더 깊게</span>
+              </div>
+              <div class="stat">
+                <b>Short Drama</b>
+                <span>15초부터 10분까지</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Studio highlight card">
+            <div class="top">
+              <span class="badge"><i></i> SU FILM • Highlight</span>
+              <span style="color:rgba(255,255,255,.7); font-size:12px; letter-spacing:.12em;">GOLD / BLACK EDITION</span>
+            </div>
+            <div class="body">
+              <div class="shot">
+                <h3>We don’t just make videos.</h3>
+                <p>
+                  우리는 ‘예쁜 영상’이 아니라, <b style="color:rgba(244,211,125,.92)">기억에 남는 장면</b>을 만듭니다.
+                  한 컷의 감정, 한 문장의 여운, 한 순간의 몰입을 설계합니다.
+                </p>
+                <div class="shotline">
+                  <span class="chip gold">Brand Film</span>
+                  <span class="chip">Animation</span>
+                  <span class="chip">AI Film</span>
+                  <span class="chip">Short Drama</span>
+                  <span class="chip">Cinematic</span>
+                </div>
+              </div>
+
+              <div style="margin-top:14px; border-top:1px solid rgba(255,255,255,.08); padding-top:14px; color:rgba(255,255,255,.72); line-height:1.7; font-size:13.5px;">
+                <b style="color:rgba(244,211,125,.92)">AI 기술</b>과 <b style="color:rgba(244,211,125,.92)">창의적인 스토리텔링</b>을 결합해
+                새로운 영상 콘텐츠의 미래를 실험하고 제작합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>SU FILM 소개</h2>
+          <p>
+            제작의 중심은 ‘기술’이 아니라 ‘이야기’입니다. 하지만 기술은 이야기를 더 빨리, 더 선명하게 관객에게 전달하도록 돕습니다.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="inner">
+              <div class="icon" aria-hidden="true">🎞️</div>
+              <h3>Story-First</h3>
+              <p>콘셉트 한 줄에서 시작해, 장면 설계와 감정선을 끝까지 책임집니다.</p>
+              <div class="bar"></div>
+            </div>
+            <div class="meta">
+              <span><b>키워드</b> 기획·각본·연출</span>
+              <span><b>목표</b> 몰입·여운</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="inner">
+              <div class="icon" aria-hidden="true">🧠</div>
+              <h3>AI + Creativity</h3>
+              <p>AI 워크플로우로 프리비즈·레퍼런스·스타일 테스트를 빠르게 진행합니다.</p>
+              <div class="bar"></div>
+            </div>
+            <div class="meta">
+              <span><b>장점</b> 속도·실험</span>
+              <span><b>결과</b> 퀄리티 일관성</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="inner">
+              <div class="icon" aria-hidden="true">✨</div>
+              <h3>Cinematic Finish</h3>
+              <p>촬영·편집·사운드·색보정까지 완성도를 ‘영화’ 톤으로 끌어올립니다.</p>
+              <div class="bar"></div>
+            </div>
+            <div class="meta">
+              <span><b>포인트</b> 리듬·톤</span>
+              <span><b>경험</b> 브랜드 감정 설계</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>제작 분야</h2>
+          <p>
+            목적(브랜딩/전환/스토리)과 플랫폼(유튜브/릴스/틱톡/TV)에 맞춰 길이와 톤을 설계합니다.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="inner">
+              <div class="icon" aria-hidden="true">📣</div>
+              <h3>광고 & 브랜드 필름</h3>
+              <p>제품 기능을 ‘스토리’로 바꾸고, 브랜드를 ‘감정’으로 기억시키는 영상.</p>
+              <div class="bar"></div>
+            </div>
+            <div class="meta">
+              <span><b>추천</b> 런칭·캠페인</span>
+              <span><b>형식</b> 15초~2분</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="inner">
+              <div class="icon" aria-hidden="true">🧸</div>
+              <h3>애니메이션 & AI 영상</h3>
+              <p>세계관·캐릭터·스타일을 구축해 시리즈로 확장 가능한 비주얼을 제작.</p>
+              <div class="bar"></div>
+            </div>
+            <div class="meta">
+              <span><b>추천</b> 캐릭터 IP</span>
+              <span><b>형식</b> 숏폼·시리즈</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="inner">
+              <div class="icon" aria-hidden="true">🎭</div>
+              <h3>숏폼 드라마</h3>
+              <p>짧은 시간에 반전·공감·웃음을 설계하는 세로형 드라마 포맷.</p>
+              <div class="bar"></div>
+            </div>
+            <div class="meta">
+              <span><b>추천</b> 바이럴</span>
+              <span><b>형식</b> 30초~3분</span>
+            </div>
+          </article>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="inner">
+              <div class="icon" aria-hidden="true">🎬</div>
+              <h3>단편 영화</h3>
+              <p>한 편의 영화로 남는 감정. 메시지보다 ‘장면’이 먼저 기억되는 이야기.</p>
+              <div class="bar"></div>
+            </div>
+            <div class="meta">
+              <span><b>추천</b> 공모전·포트폴리오</span>
+              <span><b>형식</b> 3분~20분</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="inner">
+              <div class="icon" aria-hidden="true">🎧</div>
+              <h3>시네마틱 편집 & 사운드</h3>
+              <p>영상의 ‘감정’을 살리는 사운드 디자인과 리듬 편집, 분위기 완성.</p>
+              <div class="bar"></div>
+            </div>
+            <div class="meta">
+              <span><b>포함</b> BGM·SFX·믹싱</span>
+              <span><b>톤</b> 영화적</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="inner">
+              <div class="icon" aria-hidden="true">🪄</div>
+              <h3>콘셉트 개발</h3>
+              <p>카피·슬로건·스토리보드까지. “무슨 영상 만들지?”에서 시작해도 됩니다.</p>
+              <div class="bar"></div>
+            </div>
+            <div class="meta">
+              <span><b>산출물</b> 콘티·대사·톤</span>
+              <span><b>목표</b> 기획력 강화</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>제작 프로세스</h2>
+          <p>빠르지만 가볍지 않게. 명확한 단계로 퀄리티와 납기를 함께 지킵니다.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="num">01 • DISCOVER</div>
+            <h4>목표 & 타깃 정의</h4>
+            <p>브랜드/제품의 핵심 가치와 전달해야 할 감정을 정리합니다.</p>
+          </div>
+
+          <div class="step">
+            <div class="num">02 • STORY</div>
+            <h4>콘셉트 & 스토리보드</h4>
+            <p>카피, 대사, 장면 구성으로 ‘한 문장’짜리 콘셉트를 ‘한 편’으로 만듭니다.</p>
+          </div>
+
+          <div class="step">
+            <div class="num">03 • PRODUCE</div>
+            <h4>촬영/제작 & 편집</h4>
+            <p>촬영 또는 AI 기반 제작, 편집/사운드/색보정까지 통합 진행합니다.</p>
+          </div>
+
+          <div class="step">
+            <div class="num">04 • DELIVER</div>
+            <h4>플랫폼 최적화</h4>
+            <p>세로/가로/자막/썸네일 등 채널 특성에 맞게 패키징하여 납품합니다.</p>
+          </div>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="cta" id="contact" role="region" aria-label="Contact CTA">
+          <div>
+            <h3><span style="color:rgba(244,211,125,.92);">SU FILM</span>과 함께, 당신의 이야기를 영화로.</h3>
+            <p>
+              아래 연락처/링크 영역은 원하시는 채널에 맞게 바꿔 쓰시면 됩니다.
+              (예: 이메일, 카카오톡 채널, 인스타그램, 구글 폼 등)
+            </p>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-gold" href="mailto:hello@sufilm.studio">Email</a>
+            <a class="btn btn-outline" href="#" onclick="copyText('010-0000-0000'); return false;">Phone Copy</a>
+            <a class="btn" href="#" onclick="copyText('@sufilm_official'); return false;">Instagram ID Copy</a>
+          </div>
+        </div>
+
+        <div style="margin-top:12px; color:rgba(255,255,255,.62); font-size:12.5px; line-height:1.7;">
+          ※ 데모 텍스트입니다. 실제 연락처/링크로 교체해 사용하세요.
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <div class="brand" style="gap:10px;">
+              <span class="brand-badge">S</span>
+              <div>
+                <div style="font-weight:900; letter-spacing:.12em;">SU FILM</div>
+                <div style="margin-top:6px; color:rgba(255,255,255,.65); line-height:1.7; font-size:13px;">
+                  광고 · 애니메이션 · 숏폼 드라마 · 단편 영화 제작<br/>
+                  © <span id="year"></span> SU FILM. All rights reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footlinks" aria-label="Footer links">
+            <a href="#about">소개</a>
+            <a href="#services">제작 분야</a>
+            <a href="#process">프로세스</a>
+            <a href="#contact">문의</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
